@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/matriculeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matricule: "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/prenomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom: "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/matriculeTextView"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/nomTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom: "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/prenomTextView"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btnEnregistrer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_save_24"
+        android:text="Enregistrer un paiement"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/scanQrButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_check_24"
+        android:text="Controler un etudiant"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="onScanQrButtonClicked"/>
+
+    <!-- Ajoutez les autres boutons ici avec des attributs similaires -->
+
+    <Button
+        android:id="@+id/btnHistorique"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_card_24"
+        android:text="Historique des paiements"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnBloquer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_block_24"
+        android:text="Bloquer accès étudiant"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnDebloquer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:text="Débloquer accès étudiant"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnAcces"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:text="Envoyer une réclamation"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnRecouvrir"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_money_24"
+        android:text="Recouvrement des paiements"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/deconnexionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="Déconnexion"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Copyright ©️ 2023 - Master1 UAHB"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/fond_login"
+    tools:context=".MenuActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/fond_card"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choisir votre Espace"
+                android:id="@+id/loginText"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:gravity="center_horizontal" />
+
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnEdutiant"
+                android:text="Je suis un Etudiant"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/green"
+                app:cornerRadius = "20dp"/>
+
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnVigile"
+                android:text="Je suis un vigile"
+                android:textSize="18sp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/ad"
+                app:cornerRadius = "20dp"/>
+
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnComptable"
+                android:text="Je suis un comptable"
+                android:textSize="18sp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/betterave"
+                app:cornerRadius = "20dp"/>
+
+            <Button
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnAdministrateur"
+                android:text="Je suis administrateur"
+                android:textSize="18sp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/purple_200"
+                app:cornerRadius = "20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Copyright ©️ 2023 - Master1 UAHB"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:id="@+id/signupText"
+        android:textColor="@color/green"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>
